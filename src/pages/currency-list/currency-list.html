@@ -1,0 +1,32 @@
+<!--
+  Generated template for the CurrencyListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>currencyList</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let currency of currencyList">
+      <ion-thumbnail item-start>
+        <img [src]="currency.logoUrl">
+      </ion-thumbnail>
+      <h2 [innerHtml]="currency.name"></h2>
+      <button ion-button clear item-end (click)="showDetailCurrencyView(currency)">View</button>
+    </ion-item>
+  </ion-list>
+  <ion-infinite-scroll (ionInfinite)="onPageScroll($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+ </ion-infinite-scroll>
+</ion-content>

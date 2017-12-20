@@ -1,0 +1,102 @@
+<!--
+  Generated template for the CurrencyPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>currency</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row class="odd center">
+      <ion-col>
+        <h2 class="slide-title" [innerHTML]="currency.name"></h2>
+        <img [src]="currency.logoUrl" alt="">
+      </ion-col>
+    </ion-row>
+  <ion-row class="even">
+    <ion-col>
+      Name
+    </ion-col>
+    <ion-col [innerHTML]="currency.name">
+    </ion-col>
+  </ion-row>
+  <ion-row class="odd">
+    <ion-col>
+      Symbol
+    </ion-col>
+    <ion-col [innerHTML]="currency.symbol">
+    </ion-col>
+  </ion-row>
+  <ion-row class="even">
+    <ion-col>
+      changes1h
+    </ion-col>
+    <ion-col [innerHTML]="currency.changes1h">
+    </ion-col>
+  </ion-row>
+  <ion-row class="odd">
+    <ion-col>
+      changes7d
+    </ion-col>
+    <ion-col [innerHTML]="currency.changes7d">
+    </ion-col>
+  </ion-row>
+  <ion-row class="even">
+    <ion-col>
+      changes24h
+    </ion-col>
+    <ion-col [innerHTML]="currency.changes24h">
+    </ion-col>
+  </ion-row>
+  <ion-row class="odd">
+    <ion-col>
+      circularSupply
+    </ion-col>
+    <ion-col [innerHTML]="currency.circularSupply">
+    </ion-col>
+  </ion-row>
+  <ion-row class="even">
+    <ion-col>
+      marketCap
+    </ion-col>
+    <ion-col [innerHTML]="currency.marketCap">
+    </ion-col>
+  </ion-row>
+  <ion-row class="odd">
+    <ion-col>
+      price
+    </ion-col>
+    <ion-col [innerHTML]="currency.price || 0">
+    </ion-col>
+  </ion-row>
+  <ion-row class="even">
+    <ion-col>
+      volume7d
+    </ion-col>
+    <ion-col [innerHTML]="currency.volume7d || 0">
+    </ion-col>
+  </ion-row>
+  <ion-row class="odd">
+    <ion-col>
+      volume24h
+    </ion-col>
+    <ion-col [innerHTML]="currency.volume24h || 0">
+    </ion-col>
+  </ion-row>
+  <ion-row class="even">
+    <ion-col>
+      volume30d
+    </ion-col>
+    <ion-col [innerHTML]="currency.volume30d || 0">
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>
